@@ -9,8 +9,8 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '테스트 이름',
-  domain: 'akwek33.dev',
+  name: "Hyeonjun's Blog",
+  domain: 'hyeonjun.com',
   author: 'Park Hyeonjun',
 
   // open graph metadata (optional)
