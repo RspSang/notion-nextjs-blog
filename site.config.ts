@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Park Hyeonjun',
 
   // open graph metadata (optional)
-  description: '테스트 설명',
+  description: '일본거주 개발자의 개발과 일상을 기록하는 블로그',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
