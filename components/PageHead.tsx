@@ -28,6 +28,19 @@ export const PageHead: React.FC<
         name='viewport'
         content='width=device-width, initial-scale=1, shrink-to-fit=no'
       />
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA}`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${process.env.GA}');`
+        }}
+      ></script>
 
       <meta name='robots' content='index,follow' />
       <meta property='og:type' content='website' />
