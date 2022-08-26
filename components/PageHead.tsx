@@ -30,18 +30,20 @@ export const PageHead: React.FC<
       />
       <script
         async
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-HXK2RGGTTR`}
       />
       <script
         dangerouslySetInnerHTML={{
-          __html: `  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '${process.env.GA}');`
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-HXK2RGGTTR', {
+              page_path: window.location.pathname,
+            });
+          `
         }}
-      ></script>
-
+      />
       <meta name='robots' content='index,follow' />
       <meta property='og:type' content='website' />
 
